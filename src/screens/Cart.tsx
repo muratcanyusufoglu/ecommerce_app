@@ -4,15 +4,14 @@ import {
   CartProductQuantitySelector,
   QuickActionButton,
   Spacer,
-} from '@app/components';
-import {ACTIVE_BUTTON_OPACITY} from '@app/constants';
-import {FlexContainer, MainContainer, PaddingContainer} from '@app/containers';
-import {useCartStore} from '@app/store';
-import {AppScreensParamsList} from '@app/types';
-import {AppColors} from '@app/utils';
-import {ArrowIcon} from '@assets/svg';
+} from '../components';
+import {FlexContainer, MainContainer, PaddingContainer} from '../containers';
+import {useCartStore} from '../store';
+import {AppScreensParamsList} from '../types';
+import {AppColors} from '../utils';
+import {ArrowIcon} from '../../assets/svg';
 import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
-import {ScrollView, StyleSheet, TouchableOpacity, View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 
 const RenderOrderDetailsText = ({
   title,

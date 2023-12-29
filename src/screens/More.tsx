@@ -1,6 +1,6 @@
-import {AppText} from '@app/components';
-import {FlexContainer, MainContainer} from '@app/containers';
-import {AppColors} from '@app/utils';
+import {AppText} from '../components';
+import {FlexContainer, MainContainer} from '../containers';
+import {AppColors} from '../utils';
 import React from 'react';
 
 export default (): JSX.Element => {

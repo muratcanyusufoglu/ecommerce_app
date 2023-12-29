@@ -1,5 +1,5 @@
-import {AppColors, isAndroid} from '@app/utils';
-import {ArrowIcon} from '@assets/svg';
+import {AppColors, isAndroid} from '../utils';
+import {ArrowIcon} from '../../assets/svg';
 import React from 'react';
 import {
   GestureResponderEvent,
@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import AppText from './AppText';
 import Spacer from './Spacer';
-import {ACTIVE_BUTTON_OPACITY} from '@app/constants';
+import {ACTIVE_BUTTON_OPACITY} from '../constants';
 
 type DropdownSelectorProps = {
   title: string;

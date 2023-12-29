@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import {isAndroid} from '@app/utils';
+import {isAndroid} from '../utils';
 
 type SpacerProps = {
   space: number;

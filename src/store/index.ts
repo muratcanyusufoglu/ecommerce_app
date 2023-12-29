@@ -1,5 +1,5 @@
 // cartStore.js
-import { ProductType } from '@app/types';
+import { ProductType } from '../types';
 import { create } from 'zustand';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 

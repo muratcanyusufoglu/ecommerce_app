@@ -1,5 +1,4 @@
-import {ProductType} from '@app/types';
-import {AppColors} from '@app/utils';
+import {ProductType} from '../types';
 import React, {useRef, useState} from 'react';
 import {
   Image,

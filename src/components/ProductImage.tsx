@@ -1,5 +1,3 @@
-import { AppColors } from "../utils";
-import { LikeIcon } from "../../assets/svg";
 import { ImageBackground, ImageSourcePropType, StyleProp, ViewStyle } from "react-native";
 
 type ProductImageProps = {

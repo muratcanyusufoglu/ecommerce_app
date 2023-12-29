@@ -1,5 +1,5 @@
-import {ACTIVE_BUTTON_OPACITY} from '@app/constants';
-import {AppColors, AppFonts, FontSizes} from '@app/utils';
+import {ACTIVE_BUTTON_OPACITY} from '../constants';
+import {AppColors, AppFonts, FontSizes} from '../utils';
 import {
   GestureResponderEvent,
   StyleSheet,

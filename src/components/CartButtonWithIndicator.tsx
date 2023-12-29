@@ -1,6 +1,6 @@
-import {TAB_ICON_SIZE as CART_ICON_SIZE} from '@app/constants';
-import {AppColors, isAndroid} from '@app/utils';
-import {CartIcon} from '@assets/svg';
+import {TAB_ICON_SIZE as CART_ICON_SIZE} from '../constants';
+import {AppColors, isAndroid} from '../utils';
+import {CartIcon} from '../../assets/svg';
 import React from 'react';
 import {
   GestureResponderEvent,

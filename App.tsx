@@ -1,13 +1,13 @@
-import BottomNavBar from '@app/navigation/BottomNavBar';
-import {CartScreen, ProductDetailsScreen} from '@app/screens';
-import {AppScreensParamsList} from '@app/types';
-import {AppColors} from '@app/utils';
+import BottomNavBar from './src/navigation/BottomNavBar';
+import {CartScreen, ProductDetailsScreen} from './src/screens';
+import {AppScreensParamsList} from './src/types';
+import {AppColors} from './src/utils';
 import {
   ManropeBold,
   ManropeMedium,
   ManropeRegular,
   ManropeSemiBold,
-} from '@assets/fonts';
+} from './assets/fonts';
 import {NavigationContainer} from '@react-navigation/native';
 import {
   NativeStackNavigationOptions,

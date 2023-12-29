@@ -1,15 +1,15 @@
-import {FlexContainer} from '@app/containers';
-import {ProductType} from '@app/types';
+import {FlexContainer} from '../containers';
+import {ProductType} from '../types';
 import React from 'react';
 import {Image, StyleSheet, View} from 'react-native';
 import Spacer from './Spacer';
 import AppText from './AppText';
-import {AppColors} from '@app/utils';
+import {AppColors} from '../utils';
 import QuickActionButton from './QuickActionButton';
-import {PlusIcon} from '@assets/svg';
-import {useCartStore} from '@app/store';
-import {showToast} from '@app/utils/functions';
-import ProductFallbackImage from '@assets/images/ProductFallbackImage.png';
+import {PlusIcon} from '../../assets/svg';
+import {useCartStore} from '../store';
+import {showToast} from '../utils/functions';
+import ProductFallbackImage from '../../assets/images/ProductFallbackImage.png';
 
 type CartProductQuantitySelectorProps = {
   isLastProduct?: boolean; // To hide bottom border for the last item in list.

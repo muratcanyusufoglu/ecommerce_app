@@ -1,11 +1,11 @@
-import {AppText, ProductGridList} from '@app/components';
-import {FlexContainer, MainContainer, PaddingContainer} from '@app/containers';
-import {useCartStore} from '@app/store';
-import {AppScreensParamsList, ProductType} from '@app/types';
+import {AppText, ProductGridList} from '../components';
+import {FlexContainer, MainContainer, PaddingContainer} from '../containers';
+import {useCartStore} from '../store';
+import {AppScreensParamsList, ProductType} from '../types';
 import {
   showProductAddedToast,
   showProductRemovedToast,
-} from '@app/utils/functions';
+} from '../utils/functions';
 import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 import React from 'react';
 import {StyleSheet} from 'react-native';

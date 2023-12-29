@@ -1,6 +1,6 @@
-import {ACTIVE_BUTTON_OPACITY} from '@app/constants';
-import {ProductType} from '@app/types';
-import {AppColors} from '@app/utils';
+import {ACTIVE_BUTTON_OPACITY} from '../constants';
+import {ProductType} from '../types';
+import {AppColors} from '../utils';
 import {
   ActivityIndicator,
   Image,

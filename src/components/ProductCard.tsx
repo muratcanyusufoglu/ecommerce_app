@@ -1,12 +1,10 @@
 import {
   ACTIVE_BUTTON_OPACITY,
-  PRODUCT_CARD_BORDER_RADIUS,
 } from '../constants/index';
 import {FlexContainer, PaddingContainer} from '../containers';
 import {ProductType} from '../types';
 import {AppColors} from '../utils';
 import ProductFallbackImage from '../../assets/images/ProductFallbackImage.png';
-import {DoneIcon, LikeIcon, PlusIcon} from '../../assets/svg';
 import {
   StyleSheet,
   TouchableOpacity,

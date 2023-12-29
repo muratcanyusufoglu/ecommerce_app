@@ -1,5 +1,5 @@
-import {useCartStore} from '@app/store';
-import {ProductType} from '@app/types';
+import {useCartStore} from '../store';
+import {ProductType} from '../types';
 import React from 'react';
 import {FlatList, FlatListProps} from 'react-native';
 import ProductCard from './ProductCard';
