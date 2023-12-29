@@ -1,4 +1,4 @@
-import {AppColors, AppFonts, FontSizes} from '@app/utils';
+import {AppColors, AppFonts, FontSizes} from '../utils';
 import {Text, TextProps, TextStyle} from 'react-native';
 
 /**

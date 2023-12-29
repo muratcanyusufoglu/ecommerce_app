@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity, ViewStyle} from 'react-native';
-import {FlexContainer} from '@app/containers';
-import {AppColors, isAndroid} from '@app/utils';
-import {ACTIVE_BUTTON_OPACITY} from '@app/constants';
+import {FlexContainer} from '../containers';
+import {AppColors, isAndroid} from '../utils';
+import {ACTIVE_BUTTON_OPACITY} from '../constants';
 
 type QuickActionButtonProps = {
   children: React.ReactNode;

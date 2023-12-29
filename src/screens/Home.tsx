@@ -3,16 +3,16 @@ import {
   CartButtonWithIndicator,
   Spacer,
   ProductGridList,
-} from '@app/components';
-import {FlexContainer, MainContainer, PaddingContainer} from '@app/containers';
-import {useCartStore} from '@app/store';
-import {AppScreensParamsList, ProductType} from '@app/types';
-import {AppColors} from '@app/utils';
+} from '../components';
+import {FlexContainer, MainContainer, PaddingContainer} from '../containers';
+import {useCartStore} from '../store';
+import {AppScreensParamsList, ProductType} from '../types';
+import {AppColors} from '../utils';
 import {
   showProductAddedToast,
   showProductRemovedToast,
-} from '@app/utils/functions';
-import {SearchIcon} from '@assets/svg';
+} from '../utils/functions';
+import {SearchIcon} from '../../assets/svg';
 import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 import {useIsFocused} from '@react-navigation/native';
 import React, {useEffect, useState} from 'react';
@@ -41,7 +41,7 @@ export default ({navigation}: HomeScreenProps): JSX.Element => {
     try {
       const res = await fetch('https://5fc9346b2af77700165ae514.mockapi.io/products');
       const data = await res.json();
-      
+
       //serviste sayfa ayrımı yapılamadığından infinite scroll özelliği için manual ayrım yapıldı. 
       //Data 12'li olarak çekiliyormuş gibi ayrıldı.
       const start = 0;
@@ -57,12 +57,17 @@ export default ({navigation}: HomeScreenProps): JSX.Element => {
               ),
             };
           });
-        setProductList(updatedProducts);
-        setPageNumber(pageNumber + 1);
+          console.log('-----');
+          console.log(updatedProducts[0]);
+          
+          setProductList(updatedProducts);
+          setPageNumber(pageNumber + 1);
+
+        }
+      } catch (error) {
+        console.error('Failed to get products list!', error);
       }
-    } catch (error) {
-      console.error('Failed to get products list!', error);
-    }
+
   };
 
   const navigateToProductDetails = (product: ProductType) => {

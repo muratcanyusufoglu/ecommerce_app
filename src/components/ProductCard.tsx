@@ -1,20 +1,16 @@
 import {
   ACTIVE_BUTTON_OPACITY,
   PRODUCT_CARD_BORDER_RADIUS,
-} from '@app/constants';
-import {FlexContainer, PaddingContainer} from '@app/containers';
-import {ProductType} from '@app/types';
-import {AppColors} from '@app/utils';
-import ProductFallbackImage from '@assets/images/ProductFallbackImage.png';
-import {DoneIcon, LikeIcon, PlusIcon} from '@assets/svg';
+} from '../constants/index';
+import {FlexContainer, PaddingContainer} from '../containers';
+import {ProductType} from '../types';
+import {AppColors} from '../utils';
+import ProductFallbackImage from '../../assets/images/ProductFallbackImage.png';
+import {DoneIcon, LikeIcon, PlusIcon} from '../../assets/svg';
 import {
-  ImageBackground,
-  ImageSourcePropType,
-  StyleProp,
   StyleSheet,
   TouchableOpacity,
   ViewStyle,
-  Text,
   Dimensions
 } from 'react-native';
 import AppText from './AppText';

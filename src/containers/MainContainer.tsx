@@ -1,4 +1,4 @@
-import {AppColors} from '@app/utils';
+import {AppColors} from '../utils';
 import {StatusBar} from 'expo-status-bar';
 import React, {PropsWithChildren} from 'react';
 import {ViewStyle} from 'react-native';

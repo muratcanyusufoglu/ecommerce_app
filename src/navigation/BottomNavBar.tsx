@@ -1,20 +1,20 @@
-import {AppText, CartButtonWithIndicator, Spacer} from '@app/components';
-import {ACTIVE_BUTTON_OPACITY, TAB_ICON_SIZE} from '@app/constants';
-import {FlexContainer} from '@app/containers';
+import {AppText, CartButtonWithIndicator, Spacer} from '../components';
+import {ACTIVE_BUTTON_OPACITY, TAB_ICON_SIZE} from '../constants';
+import {FlexContainer} from '../containers';
 import {
   CartScreen,
   FavoritesScreen,
   HomeScreen,
   MoreScreen,
-} from '@app/screens';
-import {AppScreensParamsList} from '@app/types';
-import {AppColors, isAndroid} from '@app/utils';
+} from '../screens';
+import {AppScreensParamsList} from '../types';
+import {AppColors, isAndroid} from '../utils';
 import {
   CartIcon,
   HeartIcon as FavoritesIcon,
   HomeIcon,
   ThreeVerticalDotsIcon as MoreIcon,
-} from '@assets/svg';
+} from '../../assets/svg';
 import {
   BottomTabBarProps,
   BottomTabNavigationOptions,
@@ -22,7 +22,7 @@ import {
 } from '@react-navigation/bottom-tabs';
 import React from 'react';
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
-import {useCartStore} from '@app/store';
+import {useCartStore} from '../store';
 
 const BottomTab = createBottomTabNavigator<AppScreensParamsList>();
 
@@ -45,7 +45,6 @@ const RenderTabIcon = ({isFocused, index, label}: TabIconProps) => {
       cartIconColor={AppColors.GreyDark}
       quantity={store.cart.length || 0}
       onPress={undefined}/> : null}
-
       {index != 1 ? <BottomTabIcon
         fill={isFocused ? AppColors.PrimaryYellow : 'none'}
         stroke={isFocused ? 'none' : AppColors.GreyDark}

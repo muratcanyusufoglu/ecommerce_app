@@ -4,18 +4,18 @@ import {
   CartButtonWithIndicator,
   QuickActionButton,
   Spacer,
-} from '@app/components';
-import ProductImage from '@app/components/ProductImage';
-import {FlexContainer, MainContainer, PaddingContainer} from '@app/containers';
-import {useCartStore} from '@app/store';
-import {AppScreensParamsList, ProductType} from '@app/types';
-import {AppColors} from '@app/utils';
+} from '../components';
+import ProductImage from '../components/ProductImage';
+import {FlexContainer, MainContainer, PaddingContainer} from '../containers';
+import {useCartStore} from '../store';
+import {AppScreensParamsList, ProductType} from '../types';
+import {AppColors} from '../utils';
 import {
   showProductAddedToast,
   showProductRemovedToast,
   showToast,
-} from '@app/utils/functions';
-import {ArrowIcon, HeartIcon} from '@assets/svg';
+} from '../utils/functions';
+import {ArrowIcon, HeartIcon} from '../../assets/svg';
 import {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 import {useIsFocused} from '@react-navigation/native';
 import React, {useEffect, useMemo, useState} from 'react';
@@ -28,7 +28,7 @@ import {
   Vibration,
   View,
 } from 'react-native';
-import ProductFallbackImage from '@assets/images/ProductFallbackImage.png';
+import ProductFallbackImage from '../../assets/images/ProductFallbackImage.png';
 
 const window = Dimensions.get('window');
 const PriceAndDiscountIndicator = ({
@@ -175,6 +175,20 @@ export default ({navigation, route}: ProductDetailsScreenProps) => {
             <PaddingContainer>
               <Spacer space={10} />
             </PaddingContainer>
+            <QuickActionButton
+                  onPress={handleOnFavorite}
+                  style={styles.favoriteButton}>
+                  <HeartIcon
+                    height={27}
+                    width={27}
+                    stroke={
+                      productDetails.isFavorite ? 'none' : AppColors.GreyDark
+                    }
+                    fill={
+                      productDetails.isFavorite ? AppColors.LightOrange : 'none'
+                    }
+                  />
+                </QuickActionButton>
             <ProductImage
               isValidImage={productDetails?.image !== ''}
               source={imageSource}
